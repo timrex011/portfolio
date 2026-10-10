@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/png" href="/image.jpeg">
     <title>Kontakt</title>
 </head>
 <body>
-    <div class="navbar">
+<nav class="navbar">
+    <div class="nav-links">
         <a href="/index.html">Über mich</a>
         <a href="/seiten/projects.html">Projekte</a>
         <a href="/seiten/contact.html">Kontakt</a>
     </div>
+</nav>
+
+<main class="contact">
     <h1>Kontakt</h1>
-    <p>Hier können Sie mit mir in Kontakt treten.</p>
+    <p class="contact-intro">
+        Du hast eine Frage oder möchtest mit mir zusammenarbeiten?
+        Schreib mir gerne!
+    </p>
+
+    <div class="contact-container">
+
+        <section class="contact-info">
+            <h2>Lass uns reden!</h2>
+            <p>
+                Ich interessiere mich für Programmierung,
+                Webentwicklung und neue IT-Projekte.
+            </p>
+
+            <div class="contact-item">
+                <h3>E-Mail</h3>
+                <a href="mailto:alfayyadh.ibraheem31@gmail.com">
+                    alfayyadh.ibraheem31@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <a href="https://github.com/timrex011/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Mein GitHub-Profil ↗
+                </a>
+            </div>
+        </section>
+
+        <form class="contact-form"
+              action="https://formsubmit.co/alfayyadh.ibraheem31@gmail.com"
+              method="POST">
+
+            <label for="name">Dein Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Name" required>
+
+            <label for="email">Deine E-Mail</label>
+            <input type="email" id="email" name="email"
+                   placeholder="name@example.com" required>
+
+            <label for="message">Deine Nachricht</label>
+            <textarea id="message" name="message"
+                      placeholder="Schreibe deine Nachricht..."
+                      rows="5" required></textarea>
+
+            <input type="hidden" name="_subject"
+                   value="Neue Nachricht über mein Portfolio">
+
+            <input type="hidden" name="_replyto" value="">
+
+            <button type="submit">Nachricht senden ↗</button>
+        </form>
+
+    </div>
+</main>
 
 
 </body>
